@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Alignment Scorecard - Is Your Leadership Team Fully Aligned?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h1 class="headline">Is Your Leadership Team Fully Aligned?</h1>
+                <p class="tagline">Find out in minutes.</p>
+
+                <div class="subheadline">
+                    <p>Most executive teams score just <strong>63% on alignment</strong>. Discover where your team excels—and where gaps are holding you back.</p>
+                </div>
+
+                <div class="value-props">
+                    <div class="prop-item">
+                        <span class="icon">📊</span>
+                        <p>Measure alignment across strategy, priorities, culture, and decision-making</p>
+                    </div>
+                    <div class="prop-item">
+                        <span class="icon">🎯</span>
+                        <p>Identify strengths and critical gaps that impact growth and execution</p>
+                    </div>
+                    <div class="prop-item">
+                        <span class="icon">📈</span>
+                        <p>Benchmark your team against top-performing executive teams</p>
+                    </div>
+                    <div class="prop-item">
+                        <span class="icon">🚀</span>
+                        <p>Translate scores into actionable steps to strengthen leadership alignment, scale intentionally, and drive results</p>
+                    </div>
+                </div>
+
+                <button class="cta-button" onclick="startAssessment()">Get Your Team's Alignment Score</button>
+
+                <div class="social-proof">
+                    <p class="quote">"We've doubled in size by aligning our leadership, strengthening our culture, and scaling intentionally."</p>
+                    <p class="attribution">— Executive Team Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Page -->
+    <section id="assessment-page" class="section">
+        <div class="container">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <p class="progress-text" id="progress-text">Question 1 of 30</p>
+            </div>
+
+            <form id="assessment-form">
+                <!-- Strategic Alignment -->
+                <div class="dimension-section" data-dimension="strategic">
+                    <h2 class="dimension-title">Strategic Alignment</h2>
+                    <p class="dimension-description">Does your team share the same vision and priorities?</p>
+
+                    <div class="question">
+                        <p class="question-text">1. Our executive team has a clear, shared understanding of our company's strategic vision.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q1" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q1" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q1" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q1" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q1" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">2. We consistently prioritize initiatives that drive our company's strategic goals.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q2" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q2" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q2" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q2" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q2" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">3. When discussing strategy, our team reaches consensus efficiently and effectively.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q3" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q3" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q3" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q3" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q3" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">4. Our strategic priorities are clearly communicated and understood throughout the organization.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q4" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q4" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q4" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q4" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q4" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">5. We regularly review and adjust our strategy based on market conditions and results.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q5" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q5" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q5" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q5" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q5" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">6. Each executive leader can clearly articulate how their function supports our strategic objectives.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q6" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q6" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q6" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q6" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q6" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role Clarity -->
+                <div class="dimension-section" data-dimension="roles">
+                    <h2 class="dimension-title">Role Clarity</h2>
+                    <p class="dimension-description">Are responsibilities and decision rights clear?</p>
+
+                    <div class="question">
+                        <p class="question-text">7. Each executive has clearly defined roles and responsibilities.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q7" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q7" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q7" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q7" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q7" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">8. We have clear decision rights—everyone knows who makes which decisions.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q8" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q8" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q8" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q8" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q8" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">9. There is minimal overlap or confusion about who owns what.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q9" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q9" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q9" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q9" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q9" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">10. When issues arise, it's clear which executive leader should handle them.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q10" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q10" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q10" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q10" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q10" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">11. We effectively delegate authority and empower leaders to act within their domains.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q11" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q11" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q11" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q11" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q11" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">12. Role boundaries are respected, and leaders support rather than overstep each other.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q12" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q12" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q12" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q12" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q12" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision-Making & Accountability -->
+                <div class="dimension-section" data-dimension="decisions">
+                    <h2 class="dimension-title">Decision-Making & Accountability</h2>
+                    <p class="dimension-description">Do you make decisions efficiently and follow through?</p>
+
+                    <div class="question">
+                        <p class="question-text">13. Our team makes important decisions in a timely manner.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q13" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q13" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q13" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q13" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q13" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">14. Once decisions are made, everyone commits to them—even if they initially disagreed.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q14" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q14" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q14" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q14" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q14" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">15. We have a clear process for making and communicating key decisions.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q15" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q15" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q15" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q15" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q15" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">16. Executives hold themselves and each other accountable for commitments and results.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q16" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q16" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q16" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q16" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q16" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">17. We follow through on decisions with clear action plans and ownership.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q17" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q17" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q17" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q17" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q17" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">18. Difficult conversations happen productively, and issues don't get swept under the rug.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q18" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q18" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q18" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q18" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q18" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Culture & Values -->
+                <div class="dimension-section" data-dimension="culture">
+                    <h2 class="dimension-title">Culture & Values</h2>
+                    <p class="dimension-description">Are behaviors and norms consistent with desired culture?</p>
+
+                    <div class="question">
+                        <p class="question-text">19. Our executive team models the culture and values we want throughout the company.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q19" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q19" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q19" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q19" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q19" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">20. We have a shared definition of what our culture is and what it means.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q20" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q20" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q20" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q20" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q20" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">21. We actively reinforce desired behaviors and address misalignment when we see it.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q21" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q21" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q21" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q21" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q21" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">22. There is strong trust and psychological safety among executive team members.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q22" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q22" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q22" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q22" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q22" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">23. We celebrate wins and learn from failures as a unified leadership team.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q23" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q23" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q23" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q23" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q23" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">24. Cultural norms are consistent across the leadership team—not fragmented by department.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q24" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q24" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q24" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q24" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q24" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Execution & Metrics -->
+                <div class="dimension-section" data-dimension="execution">
+                    <h2 class="dimension-title">Execution & Metrics</h2>
+                    <p class="dimension-description">Are you aligned on how success is measured?</p>
+
+                    <div class="question">
+                        <p class="question-text">25. We have agreed-upon metrics and KPIs that measure our success.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q25" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q25" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q25" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q25" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q25" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">26. Our team regularly reviews progress against goals and adjusts as needed.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q26" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q26" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q26" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q26" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q26" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">27. Individual executive goals are aligned with and support overall company objectives.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q27" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q27" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q27" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q27" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q27" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">28. We prioritize execution excellence and deliver on our commitments consistently.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q28" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q28" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q28" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q28" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q28" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">29. Our metrics drive the right behaviors and outcomes across the organization.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q29" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q29" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q29" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q29" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q29" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p class="question-text">30. We balance short-term performance with long-term strategic investments.</p>
+                        <div class="rating-scale">
+                            <label><input type="radio" name="q30" value="1" required> 1 - Strongly Disagree</label>
+                            <label><input type="radio" name="q30" value="2"> 2 - Disagree</label>
+                            <label><input type="radio" name="q30" value="3"> 3 - Neutral</label>
+                            <label><input type="radio" name="q30" value="4"> 4 - Agree</label>
+                            <label><input type="radio" name="q30" value="5"> 5 - Strongly Agree</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Calculate My Team's Alignment Score</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/assessment.js"></script>
+</body>
+</html>

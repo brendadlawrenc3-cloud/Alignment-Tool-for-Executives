@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Executive Alignment Results</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container results-container">
+        <div class="results-header">
+            <h1>Your Executive Alignment Scorecard</h1>
+            <p class="results-subtitle">Here's how your leadership team scores on alignment</p>
+        </div>
+
+        <!-- Overall Score -->
+        <div class="overall-score-section">
+            <div class="score-card main-score">
+                <h2>Overall Alignment Score</h2>
+                <div class="score-display" id="overall-score">-</div>
+                <div class="score-label" id="overall-label">-</div>
+                <div class="percentile" id="percentile-text">-</div>
+            </div>
+        </div>
+
+        <!-- Benchmark Comparison -->
+        <div class="benchmark-section">
+            <h2>How You Compare</h2>
+            <div class="benchmark-cards">
+                <div class="benchmark-card">
+                    <div class="benchmark-icon">🏆</div>
+                    <div class="benchmark-score">4.2+</div>
+                    <div class="benchmark-label">Top Performers</div>
+                    <p>Elite leadership teams with exceptional alignment</p>
+                </div>
+                <div class="benchmark-card highlight">
+                    <div class="benchmark-icon">📊</div>
+                    <div class="benchmark-score" id="your-score-benchmark">-</div>
+                    <div class="benchmark-label">Your Score</div>
+                    <p id="your-position">-</p>
+                </div>
+                <div class="benchmark-card">
+                    <div class="benchmark-icon">📈</div>
+                    <div class="benchmark-score">3.1-3.2</div>
+                    <div class="benchmark-label">Average Teams</div>
+                    <p>Most executive teams score in this range (63%)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dimension Scores -->
+        <div class="dimensions-section">
+            <h2>Your Scores by Dimension</h2>
+            <div id="dimension-cards" class="dimension-cards">
+                <!-- Dimension cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="insights-section">
+            <h2>Key Insights & Recommendations</h2>
+            <div id="insights-content" class="insights-content">
+                <!-- Insights will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Action Steps -->
+        <div class="action-steps-section">
+            <h2>Your Roadmap to Stronger Alignment</h2>
+            <div id="action-steps" class="action-steps">
+                <!-- Action steps will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-section">
+            <button class="primary-button" onclick="downloadPDF()">📥 Download PDF Report</button>
+            <button class="secondary-button" onclick="window.location.href='index.html'">↻ Take Assessment Again</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="results-footer">
+            <p class="quote">"We've doubled in size by aligning our leadership, strengthening our culture, and scaling intentionally."</p>
+            <p class="footer-text">Use this scorecard as a starting point for meaningful conversations with your leadership team. Consider scheduling a facilitated review session to turn these insights into action.</p>
+        </div>
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>
