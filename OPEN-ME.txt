@@ -1,0 +1,39 @@
+TO RUN THE EXECUTIVE ALIGNMENT SCORECARD:
+
+OPTION 1: Double-click to open
+================================
+1. Navigate to: /home/user/Alignment-Tool-for-Executives/
+2. Double-click on: index.html
+3. It will open in your default browser
+4. That's it!
+
+
+OPTION 2: Right-click method
+================================
+1. Go to: /home/user/Alignment-Tool-for-Executives/
+2. Right-click on: index.html
+3. Select: "Open with" → Choose your browser (Chrome, Firefox, Safari, Edge)
+4. Done!
+
+
+OPTION 3: Drag and drop
+================================
+1. Open your web browser
+2. Navigate to: /home/user/Alignment-Tool-for-Executives/
+3. Drag the index.html file into your browser window
+4. Works instantly!
+
+
+OPTION 4: Use file:// URL in browser
+================================
+1. Open your web browser
+2. In the address bar, type or paste:
+   file:///home/user/Alignment-Tool-for-Executives/index.html
+3. Press Enter
+4. Tool loads immediately!
+
+
+YOUR FILES ARE IN:
+/home/user/Alignment-Tool-for-Executives/
+
+All you need is the index.html file - open it in any browser and you're ready to go!
